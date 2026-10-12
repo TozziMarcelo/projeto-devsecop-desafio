@@ -21,8 +21,8 @@ jobs:
     steps:
       - name: 📥 Checkout do Código
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        with: {fetch-depth: 0}
+         
 
       # ⚠️ Assim que remover segredos do código, passar pra cá
       # Obs: não é uma alternativa tão robusta quanto um Vault por exemplo, mas já que o segredo estava em código....
@@ -48,6 +48,9 @@ jobs:
       # Dica: use a action oficial "gitleaks/gitleaks-action@v2" e passe o
       - name: 🔑 Secrets Scanning
         run: echo "TODO - implemente o Secrets Scanning com Gitleaks aqui"
+             ubuntu-latest
+steps:   
+      - uses: gitleaks/gitleaks-action@v2
 
       # ❌ PASSO A IMPLEMENTAR — SAST com Semgrep
       # Dica: instale com "pip install semgrep" e rode
