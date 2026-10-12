@@ -17,7 +17,7 @@ jobs:
   build:
     name: Build, Segurança e Assinatura
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: 📥 Checkout do Código
         uses: actions/checkout@v4
@@ -48,8 +48,7 @@ jobs:
       # Dica: use a action oficial "gitleaks/gitleaks-action@v2" e passe o
       - name: 🔑 Secrets Scanning
         run: echo "TODO - implemente o Secrets Scanning com Gitleaks aqui"
-             ubuntu-latest
-steps:   
+             ubuntu-latest 
       - uses: gitleaks/gitleaks-action@v2
 
       # ❌ PASSO A IMPLEMENTAR — SAST com Semgrep
