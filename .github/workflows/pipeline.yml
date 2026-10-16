@@ -23,8 +23,12 @@ jobs:
         uses: actions/checkout@v4
         with: 
          fetch-depth: 0
+<<<<<<< Updated upstream
          
 
+=======
+        
+>>>>>>> Stashed changes
       # ⚠️ Assim que remover segredos do código, passar pra cá
       # Obs: não é uma alternativa tão robusta quanto um Vault por exemplo, mas já que o segredo estava em código....
       # Dicas para cada variável:
@@ -55,8 +59,9 @@ jobs:
       # Dica: instale com "pip install semgrep" e rode
       #   semgrep scan --config auto --config p/xss --error src/
       - name: 🔍 SAST - Semgrep
-        run: echo "TODO - implemente o SAST com Semgrep aqui"
-
+        run: |
+          pip install semgrep
+          semgrep scan --config auto --error src/
       # ❌ PASSO A IMPLEMENTAR — SCA com Grype
       # Dica: primeiro, gere o package-lock pelo npm:
       #   npm install --package-lock-only --no-audit --no-fund
