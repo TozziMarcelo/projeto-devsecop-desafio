@@ -25,6 +25,11 @@ A pipeline está **incompleta**. Os steps de segurança precisam ser implementad
 ## Como a pipeline funciona
 > **Substitua este bloco pela sua explicação após implementar a pipeline.**
 > Descreva cada step, o que ele faz e por que ele é importante para a segurança.
-
+Iniciei o projeto dando um fork no repositório original.
+Após isso, criei 2 branches, a main, e outra com nome teste, para não commitar direto na main branch.
+Habilitado o GitHub Pages no repositório.
+Implementado o Gitleaks (secrets scanning)
+Removida as linhas com os findings, que eram keys hardcoded não utilizadas no arquivo script.js
+Implementado o Semgrep (gate SAST)
 ## URL de Produção
 > Adicione aqui o link do GitHub Pages após o deploy.
