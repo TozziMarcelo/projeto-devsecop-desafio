@@ -58,6 +58,7 @@ jobs:
         run: |
           pip install semgrep
           semgrep scan --config auto --error src/
+          
       # ❌ PASSO A IMPLEMENTAR — SCA com Grype
       # Dica: primeiro, gere o package-lock pelo npm:
       #   npm install --package-lock-only --no-audit --no-fund
