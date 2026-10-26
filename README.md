@@ -31,5 +31,9 @@ Habilitado o GitHub Pages no repositório.
 Implementado o Gitleaks (secrets scanning)
 Removida as linhas com os findings, que eram keys hardcoded não utilizadas no arquivo script.js
 Implementado o Semgrep (gate SAST)
+Corrigido os findings do Semgrep
+Instalado o Grype - gate SCA
+Atualizada as versões das libs barradas no gate SCA
+ 
 ## URL de Produção
 > Adicione aqui o link do GitHub Pages após o deploy.
