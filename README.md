@@ -25,14 +25,15 @@ A pipeline está **incompleta**. Os steps de segurança precisam ser implementad
 ## Como a pipeline funciona
 > **Substitua este bloco pela sua explicação após implementar a pipeline.**
 > Descreva cada step, o que ele faz e por que ele é importante para a segurança.
-Iniciei o projeto dando um fork no repositório original.
+Iniciei o projeto dando um fork no repositório original. isso cria um repositório igual ao original, para que possamos trabalhar sem mexer no processo que está em produção.
 Após isso, criei 2 branches, a main, e outra com nome teste, para não commitar direto na main branch.
 Habilitado o GitHub Pages no repositório.
-Implementado o Gitleaks (secrets scanning)
+Implementado o Gitleaks (secrets scanning). Importante para detectar secrets no código. ex chaves e senhas
 Removida as linhas com os findings, que eram keys hardcoded não utilizadas no arquivo script.js
-Implementado o Semgrep (gate SAST)
+Implementado o Semgrep (gate SAST). importante para detectar vulnerabilidades no código
 Corrigido os findings do Semgrep
-Instalado o Grype - gate SCA
+Instalado o Grype - gate SCA. importante para detectar bibliotecas desatualizadas (vulneráveis)
 Atualizada as versões das libs barradas no gate SCA
+Atualizada versão do git actions para 4.1.3
 ## URL de Produção
-> Adicione aqui o link do GitHub Pages após o deploy.
+https://tozzimarcelo.github.io/projeto-devsecop-desafio/
