@@ -34,6 +34,5 @@ Implementado o Semgrep (gate SAST)
 Corrigido os findings do Semgrep
 Instalado o Grype - gate SCA
 Atualizada as versões das libs barradas no gate SCA
- 
 ## URL de Produção
 > Adicione aqui o link do GitHub Pages após o deploy.
